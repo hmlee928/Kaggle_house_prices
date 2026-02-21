@@ -1,15 +1,21 @@
-# Kaggle House Prices (Ames Housing)
+# Kaggle | House Prices: Advanced Regression Techniques
+
+Baseline Pipeline: RobustScaler + Lasso  
+Author: Haemin  
 
 Goal: Predict `SalePrice` using tabular regression.
 
-## Baseline (v1)
+---
 
-- Model: Ridge (scikit-learn)
-- Encoding: One-hot (`pd.get_dummies`)
-- Missing handling: `fillna(0)`
-- Alignment: `train/test align`
-- Output: `outputs/submission_ridge_baseline.csv`
-- Public LB: 0.17117
+## Baseline (v2)
+
+- Model: Lasso (scikit-learn)
+- Numeric: Median Imputation + RobustScaler
+- Categorical: Mode Imputation + OneHotEncoder
+- Outlier handling: GrLivArea rule
+- Validation: Holdout + 5-Fold CV
+- Metric: RMSE
+- CV Score: ~0.119
 ## Project Structure
 
 ```
