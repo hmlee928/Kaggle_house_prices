@@ -9,7 +9,7 @@ Goal: Predict `SalePrice` using tabular regression.
 - Missing handling: `fillna(0)`
 - Alignment: `train/test align`
 - Output: `outputs/submission_ridge_baseline.csv`
-
+- Public LB: 0.17117
 ## Project Structure
 
 ```
